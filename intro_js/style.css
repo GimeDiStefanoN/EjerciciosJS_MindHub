@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:ital,wght@0,100;0,300;0,400;1,900&family=Quicksand:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+h1{
+    color: rgb(177, 248, 171);
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    padding: 2rem;
+}
+p{
+    font-size: 1.2rem;
+    color: whitesmoke;
+
+}
+ol li{
+    padding: 0.8rem 0 1rem 2rem;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+ol li ol{
+    margin-left: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.btns button{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: 3px solid coral;
+    font-size: 1rem;
+}

@@ -159,50 +159,76 @@
         // }
 // 8.	Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable llamada numeroIncognita y que permita en 3 intentos adivinar el numero. El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos el cual se deberá guardar en una variable llamada numeroIngresado, y en cada intento deberás mostrarle un mensaje al usuario diciendo: “el numero ingresado es mayor, vuelve a intentarlo” o “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, un mensaje que diga: “Ganaste, haz adivinado el numero.” No te preocupes si usas mucho código repetido, mas adelante veraz como realizar este juego de manera mas eficiente.
 
-        let numeroIncognita = 9; //establezco el numero para adivinar
-        console.log(numeroIncognita);
+        // let numeroIncognita = 9; //establezco el numero para adivinar
+        // console.log(numeroIncognita);
 
-        let numeroIngresado= [null, null, null] //creo un array donde iran todas las opciones
-        console.table(numeroIngresado)
+        // let numeroIngresado= [null, null, null] //creo un array donde iran todas las opciones
+        // console.table(numeroIngresado)
 
-               //creo las acciones para interactuar
-        let intento1 = prompt('Intento 1: ingresá un número entre 1 y 10');
-        console.log(intento1);
-        //condiciones del juego
-        if(intento1 < 9){
-                alert('el numero ingresado es menor, vuelve a intentarlo');
-        } else if (intento1 > 9){
-            alert('el numero ingresado es mayor, vuelve a intentarlo');
-        }else{
-                alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
-        }
+        //        //creo las acciones para interactuar
+        // let intento1 = prompt('Intento 1: ingresá un número entre 1 y 10');
+        // console.log(intento1);
+        // //condiciones del juego
+        // if(intento1 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento1 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
 
-        let intento2 = prompt('Intento 2 ingresá un número entre 1 y 10');
-        console.log(intento2);
-        if(intento2 < 9){
-                alert('el numero ingresado es menor, vuelve a intentarlo');
-        } else if (intento2 > 9){
-            alert('el numero ingresado es mayor, vuelve a intentarlo');
-        }else{
-                alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
-        }
-        let intento3 = prompt('Intento 3: ingresá un número entre 1 y 10');
-        console.log(intento3);
-        if(intento3 < 9){
-                alert('el numero ingresado es menor, vuelve a intentarlo');
-        } else if (intento3 > 9){
-            alert('el numero ingresado es mayor, vuelve a intentarlo');
-        }else{
-                alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
-        }
-         //asigno los valores ingresados al array
-        numeroIngresado[0] = intento1;
-        numeroIngresado[1] = intento2;
-        numeroIngresado[2] = intento3;
-        console.table(numeroIngresado)
+        // let intento2 = prompt('Intento 2 ingresá un número entre 1 y 10');
+        // console.log(intento2);
+        // if(intento2 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento2 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
+        // let intento3 = prompt('Intento 3: ingresá un número entre 1 y 10');
+        // console.log(intento3);
+        // if(intento3 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento3 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
+        //  //asigno los valores ingresados al array
+        // numeroIngresado[0] = intento1;
+        // numeroIngresado[1] = intento2;
+        // numeroIngresado[2] = intento3;
+        // console.table(numeroIngresado)
 
 // 9.	Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.
-
+        let tuEdad = prompt('¿Cual es tu edad?');
+        if( tuEdad <= 12){
+                console.log(`Sos un infante, porque tenés ${tuEdad}`);
+        }else if(tuEdad >= 13 && tuEdad <= 18){
+                console.log(`Sos un adolescente, porque tenés ${tuEdad}`);
+        }else if(tuEdad >= 19 && tuEdad <= 45){
+                console.log(`Sos un mayor joven, porque tenés ${tuEdad}`);
+        }else if(tuEdad > 45 && tuEdad <= 100){
+                console.log(`Sos un anciano, porque tenés ${tuEdad}`);
+        }else{
+                let seguro = confirm(`¿Realmente tenés ${tuEdad}?`)
+                if(seguro ==true){
+                        console.log(`Sos un Super anciano, porque tenés ${tuEdad}`);
+                }else{
+                        console.log('Decime tu verdadera edad')
+                        let tuEdad2 = prompt('¿Cual es tu verdadera edad?');
+                        if( tuEdad2 <= 12){
+                                console.log(`Sos un infante, porque tenés ${tuEdad2}`);
+                        }else if(tuEdad2 >= 13 && tuEdad2 <= 18){
+                                console.log(`Sos un adolescente, porque tenés ${tuEdad2}`);
+                        }else if(tuEdad2 >= 19 && tuEdad2 <= 45){
+                                console.log(`Sos un mayor joven, porque tenés ${tuEdad2}`);
+                        }else{
+                                console.log(`Sos un anciano, porque tenés ${tuEdad2}`);
+                        }
+                }
+        }
 // 10.	Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
 
 // 11.	Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.

@@ -202,37 +202,70 @@
         // console.table(numeroIngresado)
 
 // 9.	Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.
-        let tuEdad = prompt('¿Cual es tu edad?');
-        if( tuEdad <= 12){
-                console.log(`Sos un infante, porque tenés ${tuEdad}`);
-        }else if(tuEdad >= 13 && tuEdad <= 18){
-                console.log(`Sos un adolescente, porque tenés ${tuEdad}`);
-        }else if(tuEdad >= 19 && tuEdad <= 45){
-                console.log(`Sos un mayor joven, porque tenés ${tuEdad}`);
-        }else if(tuEdad > 45 && tuEdad <= 100){
-                console.log(`Sos un anciano, porque tenés ${tuEdad}`);
-        }else{
-                let seguro = confirm(`¿Realmente tenés ${tuEdad}?`)
-                if(seguro ==true){
-                        console.log(`Sos un Super anciano, porque tenés ${tuEdad}`);
-                }else{
-                        console.log('Decime tu verdadera edad')
-                        let tuEdad2 = prompt('¿Cual es tu verdadera edad?');
-                        if( tuEdad2 <= 12){
-                                console.log(`Sos un infante, porque tenés ${tuEdad2}`);
-                        }else if(tuEdad2 >= 13 && tuEdad2 <= 18){
-                                console.log(`Sos un adolescente, porque tenés ${tuEdad2}`);
-                        }else if(tuEdad2 >= 19 && tuEdad2 <= 45){
-                                console.log(`Sos un mayor joven, porque tenés ${tuEdad2}`);
-                        }else{
-                                console.log(`Sos un anciano, porque tenés ${tuEdad2}`);
-                        }
-                }
-        }
+        // let tuEdad = prompt('¿Cual es tu edad?');
+        // if( tuEdad <= 12){
+        //         console.log(`Sos un infante, porque tenés ${tuEdad}`);
+        // }else if(tuEdad >= 13 && tuEdad <= 18){
+        //         console.log(`Sos un adolescente, porque tenés ${tuEdad}`);
+        // }else if(tuEdad >= 19 && tuEdad <= 45){
+        //         console.log(`Sos un mayor joven, porque tenés ${tuEdad}`);
+        // }else if(tuEdad > 45 && tuEdad <= 100){
+        //         console.log(`Sos un anciano, porque tenés ${tuEdad}`);
+        // }else{
+        //         let seguro = confirm(`¿Realmente tenés ${tuEdad}?`)
+        //         if(seguro ==true){
+        //                 console.log(`Sos un Super anciano, porque tenés ${tuEdad}`);
+        //         }else{
+        //                 console.log('Decime tu verdadera edad')
+        //                 let tuEdad2 = prompt('¿Cual es tu verdadera edad?');
+        //                 if( tuEdad2 <= 12){
+        //                         console.log(`Sos un infante, porque tenés ${tuEdad2}`);
+        //                 }else if(tuEdad2 >= 13 && tuEdad2 <= 18){
+        //                         console.log(`Sos un adolescente, porque tenés ${tuEdad2}`);
+        //                 }else if(tuEdad2 >= 19 && tuEdad2 <= 45){
+        //                         console.log(`Sos un mayor joven, porque tenés ${tuEdad2}`);
+        //                 }else{
+        //                         console.log(`Sos un anciano, porque tenés ${tuEdad2}`);
+        //                 }
+        //         }
+        // }
 // 10.	Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
+        let opciones = ['piedra', 'papel', 'tijeras'];
+        let jugador1 = [];
+        let ingresoJugador1 = prompt('Jugador 1: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        jugador1.push(ingresoJugador1);
+        
+        let jugador2 = [];
+        let ingresoJugador2 = prompt('Jugador 2: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        jugador2.push(ingresoJugador2);
+
+        let partida = [
+                {
+                        nombre: 'Participante 1',
+                        jugo: jugador1[0]
+                },
+                {
+                        nombre: 'Participante 2',
+                        jugo: jugador2[0]
+                },
+        ]
+        console.table(partida)
+
+        if(partida[0].jugo === partida[1].jugo){
+                console.log(`Empataron porque ambos eligieron ${jugador1[0]}`)
+        } // else if(partida[0].jugo === opciones[2] && partida[1].jugo=== opciones[0]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${jugador1[0]} y ${partida[1].nombre} porque eligió ${jugador2[0]}`)
+        //  } //else if(partida[0].jugo ==='papel' && partida[1].jugo==='piedra'){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${jugador1[0]} y ${partida[1].nombre} porque eligió ${jugador2[0]}`)
+        // }
+
 
 // 11.	Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
 
+
+
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
+
+
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.

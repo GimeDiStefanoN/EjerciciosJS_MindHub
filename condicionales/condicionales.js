@@ -230,42 +230,100 @@
         //         }
         // }
 // 10.	Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
-        let opciones = ['piedra', 'papel', 'tijeras'];
-        let jugador1 = [];
-        let ingresoJugador1 = prompt('Jugador 1: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
-        jugador1.push(ingresoJugador1);
-        
-        let jugador2 = [];
-        let ingresoJugador2 = prompt('Jugador 2: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
-        jugador2.push(ingresoJugador2);
+        // const opciones = ['piedra', 'papel', 'tijeras'];
+        // console.log(opciones)
+        // let jugador1 = [];
+        // let ingresoJugador1 = prompt('Jugador 1: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        // jugador1.push(ingresoJugador1);
+        // console.log(jugador1[0])
+        // let jugador2 = [];
+        // let ingresoJugador2 = prompt('Jugador 2: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        // jugador2.push(ingresoJugador2);
+        // console.log(jugador2[0])
+        // let partida = [
+        //         {
+        //                 nombre: 'Participante 1',
+        //                 jugo: jugador1[0]
+        //         },
+        //         {
+        //                 nombre: 'Participante 2',
+        //                 jugo: jugador2[0]
+        //         },
+        // ]
+        // console.table(partida)
 
-        let partida = [
-                {
-                        nombre: 'Participante 1',
-                        jugo: jugador1[0]
-                },
-                {
-                        nombre: 'Participante 2',
-                        jugo: jugador2[0]
-                },
-        ]
-        console.table(partida)
-
-        if(partida[0].jugo === partida[1].jugo){
-                console.log(`Empataron porque ambos eligieron ${jugador1[0]}`)
-        } // else if(partida[0].jugo === opciones[2] && partida[1].jugo=== opciones[0]){
-        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${jugador1[0]} y ${partida[1].nombre} porque eligió ${jugador2[0]}`)
-        //  } //else if(partida[0].jugo ==='papel' && partida[1].jugo==='piedra'){
-        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${jugador1[0]} y ${partida[1].nombre} porque eligió ${jugador2[0]}`)
-        // }
-
-
+        // if(partida[0].jugo == partida[1].jugo){
+        //         console.log(`Empataron porque ambos eligieron ${partida[0].jugo}`)
+                
+        // } else if(partida[0].jugo == opciones[0] && partida[1].jugo == opciones[2]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[1] && partida[1].jugo == opciones[0]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[2] && partida[1].jugo == opciones[1]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[1] && partida[1].jugo == opciones[2]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // } else if(partida[0].jugo == opciones[0] && partida[1].jugo == opciones[1]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // } else if(partida[0].jugo == opciones[2] && partida[1].jugo == opciones[0]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // }else{
+        //         console.log( `Algun jugador ingresó hizo trampa`)
+        // };
 // 11.	Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
-
-
-
+        // let ingreseColor = prompt('ingrese un color').toLocaleLowerCase();
+        // console.log(ingreseColor)
+        // switch (ingreseColor) {
+        // case 'blanco':
+        // console.log('Falta color')
+        // break;
+        // case 'negro':
+        // console.log('Falta color')
+        // break;
+        // case 'verde':
+        // console.log('Color de la naturaleza')
+        // break;
+        // case 'azul':
+        // console.log('Color del agua')
+        // break;
+        // case 'amarillo':
+        // console.log('Color del sol')
+        // break;
+        // case 'rojo':
+        // console.log('color del fuego')
+        // break;
+        // case 'marron':
+        // console.log('Color de la tierra')
+        // break;
+        // default:
+        // console.log('Excelnte eleccion, no lo teniamos pensado')
+        // break;
+        // }
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
-
+        
 
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
+
+// let CIUDADANO=[{
+//   nombre: null,
+//   apellido: null,
+//   nacimiento: null,
+//   ciudad: null,
+//   provincia: null
+// }];
+
+// let ingreseNombre = prompt('ingresa tu nombre').toLocaleUpperCase();
+// let ingreseApellido = prompt('ingresa tu apellido').toLocaleUpperCase();
+// let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento').toLocaleUpperCase();
+// let ingreseCiudad = prompt('ingresa tu ciudad').toLocaleUpperCase();
+// let ingreseProvincia = prompt('ingresa tu provincia').toLocaleUpperCase();
+
+// CIUDADANO.nombre.push(ingreseNombre);
+// console.log(CIUDADANO.nombre)
+// CIUDADANO.apellido.push(ingreseApellido);
+// CIUDADANO.nacimiento.push(ingreseNacimiento);
+// CIUDADANO.ciudad.push(ingreseCiudad);
+// CIUDADANO.provincia.push(ingreseProvincia);
+
+// console.table(CIUDADANO)

@@ -71,37 +71,92 @@
         // }
 
 // 6.	Realizar un programa que permita ingresar por pantalla tu nombre, edad, altura, visión y permita determinar si estas capacitado para conducir. La persona deberá cumplir con una edad mínima de 18 años, medir mas de 150cm y tener una visión de 8 de 10 como mínimo.
-        let conductor = {  //aca defino el objeto conductor e inicializo las variables vacias.
-            nombre: null,
-            edad: null,
-            altura: null,
-            vision: null
-        }
-        console.table(conductor)
+        // let conductor = {  //aca defino el objeto conductor e inicializo las variables vacias.
+        //     nombre: null,
+        //     edad: null,
+        //     altura: null,
+        //     vision: null
+        // }
+        // console.table(conductor)
 
-        let ingresaNombre = prompt('Ingresa tu nombre')  //aca creo la accion para que el usuario interactue ingresando sus datos
-        let ingresaEdad = prompt('Ingresa tu edad')
-        let ingresaAltura = prompt('Ingresa tu altura sin decimales')
-        let ingresaVision = prompt('Ingresa tu nivel de vision del 0 al 10')
-        console.log(ingresaNombre)
-        console.log(ingresaEdad)
-        console.log(ingresaAltura)
-        console.log(ingresaVision)
+        // let ingresaNombre = prompt('Ingresa tu nombre')  //aca creo la accion para que el usuario interactue ingresando sus datos
+        // let ingresaEdad = prompt('Ingresa tu edad')
+        // let ingresaAltura = prompt('Ingresa tu altura sin decimales')
+        // let ingresaVision = prompt('Ingresa tu nivel de vision del 0 al 10')
+        // console.log(ingresaNombre)
+        // console.log(ingresaEdad)
+        // console.log(ingresaAltura)
+        // console.log(ingresaVision)
 
-        conductor.nombre = ingresaNombre; //aca asigno los valores ingresados al objeto creado previamente
-        conductor.edad = ingresaEdad;
-        conductor.altura = ingresaAltura;
-        conductor.vision = ingresaVision;
-        console.table(conductor)
+        // conductor.nombre = ingresaNombre; //aca asigno los valores ingresados al objeto creado previamente
+        // conductor.edad = ingresaEdad;
+        // conductor.altura = ingresaAltura;
+        // conductor.vision = ingresaVision;
+        // console.table(conductor)
 
-        if(conductor.edad > 18 && conductor.altura > 150 && conductor.vision >= 8){
-            console.log('Puede conducir')
-        }else{
-            console.log('No puede conducir')
-        }
+        // if(conductor.edad > 18 && conductor.altura > 150 && conductor.vision >= 8){
+        //     console.log('Puede conducir')
+        // }else{
+        //     console.log('No puede conducir')
+        // }
 
 // 7.	Realizar un programa que permita el ingreso de los siguientes datos: Nombre, pase (vip o normal), si posee entrada (si o no, s o n, true o false). Las personas que posean tu mismo nombre tienen ingreso libre así como también los que posean un pase vip, mostrar un mensaje de bienvenida. Si posee entrada preguntar si desea utilizarla, en caso afirmativo mostrar mismo mensaje de bienvenida. Y por ultimo de no tener el mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso afirmativo solicitar dinero disponible, si posee $1000 o mas, mostrar mensaje de venta de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en caso contrario a no querer comprar, mostrar mensaje de despedida.
+let invitado = {  //aca defino el objeto invitado e inicializo las variables vacias.
+        nombre: null,
+        pase: null,
+        entrada: null
+    };
+    console.table(invitado)
+let nombreInvitado = prompt('ingresa tu nombre').toUpperCase();
+console.log(nombreInvitado);
+let tienePase = prompt('¿que pase tenés? VIP o normal');
+console.log(tienePase);
 
+
+invitado.nombre = nombreInvitado;
+invitado.pase = tienePase;
+
+
+if ( invitado.nombre === 'GIMENA' || invitado.pase =='VIP'){
+    alert(`Bienvenid@ ${invitado.nombre}`)
+} else {
+        let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');
+        if (compra == true){
+                let dinero = prompt('¿cuanto dinero tenés?');
+                if (dinero >= 1000){
+                        alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
+                }else{
+                        alert(`Compra rechazada`)
+                }
+        } else {
+                alert('Que lastima, adios!')
+        }
+};
+let tieneEntrada = confirm('¿Tenes entrada? pone OK, sino CANCEL');
+console.log(tieneEntrada);
+invitado.entrada = tieneEntrada;
+console.table(invitado)
+
+if (invitado.entrada == true){
+        let usar = confirm('¿Queres usarla? OK si es si, CANCEL si es NO');
+        if (usar == true){
+                alert(`Mas que Bienvenid@ ${invitado.nombre}`)
+        }else{
+                alert('Un gusto, nos vemos!')
+        }
+} else{
+    let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');    
+        if (compra == true){
+                let dinero = prompt('¿cuanto dinero tenés?');
+                if (dinero >= 1000){
+                        alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
+                }else{
+                        alert(`Compra rechazada`)
+                }
+        } else {
+                alert('Que lastima, adios!')
+}
+}
 // 8.	Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable llamada numeroIncognita y que permita en 3 intentos adivinar el numero. El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos el cual se deberá guardar en una variable llamada numeroIngresado, y en cada intento deberás mostrarle un mensaje al usuario diciendo: “el numero ingresado es mayor, vuelve a intentarlo” o “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, un mensaje que diga: “Ganaste, haz adivinado el numero.” No te preocupes si usas mucho código repetido, mas adelante veraz como realizar este juego de manera mas eficiente.
 
 // 9.	Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.

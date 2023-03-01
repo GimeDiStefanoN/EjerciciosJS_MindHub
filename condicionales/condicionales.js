@@ -164,7 +164,34 @@ if (invitado.entrada == true){
 // 10.	Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
 
 // 11.	Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
-
+let ingreseColor = prompt('ingrese un color').toLocaleLowerCase();
+console.log(ingreseColor)
+switch (ingreseColor) {
+  case 'blanco':
+    console.log('Falta color')
+    break;
+  case 'negro':
+    console.log('Falta color')
+    break;
+  case 'verde':
+    console.log('Color de la naturaleza')
+    break;
+  case 'azul':
+    console.log('Color del agua')
+    break;
+  case 'amarillo':
+    console.log('Color del sol')
+    break;
+  case 'rojo':
+    console.log('color del fuego')
+    break;
+  case 'marron':
+    console.log('Color de la tierra')
+    break;
+  default:
+    console.log('Excelnte eleccion, no lo teniamos pensado')
+    break;
+}
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.

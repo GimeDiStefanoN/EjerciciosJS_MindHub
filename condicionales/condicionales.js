@@ -190,8 +190,31 @@ switch (ingreseColor) {
     break;
   default:
     console.log('Excelnte eleccion, no lo teniamos pensado')
-    break;
+   break;
 }
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
+
+let CIUDADANO=[{
+  nombre: null,
+  apellido: null,
+  nacimiento: null,
+  ciudad: null,
+  provincia: null
+}];
+
+let ingreseNombre = prompt('ingresa tu nombre').toLocaleUpperCase();
+let ingreseApellido = prompt('ingresa tu apellido').toLocaleUpperCase();
+let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento').toLocaleUpperCase();
+let ingreseCiudad = prompt('ingresa tu ciudad').toLocaleUpperCase();
+let ingreseProvincia = prompt('ingresa tu provincia').toLocaleUpperCase();
+
+CIUDADANO.nombre.push(ingreseNombre);
+console.log(CIUDADANO.nombre)
+CIUDADANO.apellido.push(ingreseApellido);
+CIUDADANO.nacimiento.push(ingreseNacimiento);
+CIUDADANO.ciudad.push(ingreseCiudad);
+CIUDADANO.provincia.push(ingreseProvincia);
+
+console.table(CIUDADANO)

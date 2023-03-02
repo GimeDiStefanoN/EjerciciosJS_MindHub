@@ -305,25 +305,24 @@
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
 
-// let CIUDADANO=[{
-//   nombre: null,
-//   apellido: null,
-//   nacimiento: null,
-//   ciudad: null,
-//   provincia: null
-// }];
-
-// let ingreseNombre = prompt('ingresa tu nombre').toLocaleUpperCase();
-// let ingreseApellido = prompt('ingresa tu apellido').toLocaleUpperCase();
-// let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento').toLocaleUpperCase();
-// let ingreseCiudad = prompt('ingresa tu ciudad').toLocaleUpperCase();
-// let ingreseProvincia = prompt('ingresa tu provincia').toLocaleUpperCase();
-
-// CIUDADANO.nombre.push(ingreseNombre);
-// console.log(CIUDADANO.nombre)
-// CIUDADANO.apellido.push(ingreseApellido);
-// CIUDADANO.nacimiento.push(ingreseNacimiento);
-// CIUDADANO.ciudad.push(ingreseCiudad);
-// CIUDADANO.provincia.push(ingreseProvincia);
-
-// console.table(CIUDADANO)
+        // let ingreseNombre = prompt('ingresa tu nombre');
+        // let ingreseApellido = prompt('ingresa tu apellido');
+        // let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento');
+        // let ingreseCiudad = prompt('ingresa tu ciudad');
+        // let ingreseProvincia = prompt('ingresa tu provincia');
+        // alert(`Los datos ingresados fueron ${ingreseNombre}, ${ingreseApellido}, ${ingreseNacimiento}, ${ingreseCiudad}, ${ingreseProvincia}`)
+        // let correct = confirm('¿Estan correctos?')
+        // if(correct == true){
+        //         var DNI= [];
+        //         DNI.push({
+        //                 nombre: ingreseNombre,
+        //                 apellido: ingreseApellido,
+        //                 nacimiento: ingreseNacimiento,
+        //                 ciudad: ingreseCiudad,
+        //                 provincia: ingreseProvincia
+        //         })
+        //         console.table(DNI)
+        //         console.log('Registro Exitoso')
+        // }else{
+        //         console.log('Datos erroneos, intentelo de nuevo en 1 mes')
+        // };

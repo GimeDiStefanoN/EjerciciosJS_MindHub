@@ -300,28 +300,35 @@
         // break;
         // }
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
-       let num1 = prompt('Ingrese un numero'); 
-       let num2 = prompt('Ingrese otro numero'); 
-       let operacion = prompt('Ingrese que operación quiere realizar (suma,resta, multiplicacion, division').toLowerCase(); 
-       console.log( `Al ${num1} y al ${num2} quiero hacer la operación de ${operacion}`);
+//        let num1 = Number(prompt('Ingrese un numero')); 
+//        let num2 = Number(prompt('Ingrese otro numero')); 
+//        let operacion = prompt('Ingrese que operación quiere realizar (suma,resta, multiplicacion, division').toLowerCase(); 
+//        console.log( `Al ${num1} y al ${num2} quiero hacer la operación de ${operacion}`);
+//        switch (operacion) {
+//         case 'suma':
+//                 console.log(num1 + num2);
+//                 break;
+//         case 'resta':
+//                 console.log(num1 - num2);
+//                 break;
+//         case 'multiplicacion':
+//                 console.log(num1 * num2);
+//                 break;
+//         case 'division':
+//                 if(num2 === 0){
+//                         console.log('no se puede dividir por 0')
+//                 } else{
+//                         console.log(num1 / num2);
+//                 }
+//                 break;
+//         default:{
+//                 console.log('Algo raro pasó, verifica los datos ingresados');
+//         }
+//                 break;
+//        }
+//  console.warn('fin')
 
-       switch (operacion) {
-        case 'suma':
-                console.log(parseInt(num1) + parseInt(num2));
-                break;
-        case 'resta':
-                
-                break;
-        case 'multiplicacion':
-                
-                break;
-        case 'division':
-                
-                break;
-       
-        default:
-                break;
-       }
+
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
 
         // let ingreseNombre = prompt('ingresa tu nombre');

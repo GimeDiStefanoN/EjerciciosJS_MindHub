@@ -101,120 +101,254 @@
         // }
 
 // 7.	Realizar un programa que permita el ingreso de los siguientes datos: Nombre, pase (vip o normal), si posee entrada (si o no, s o n, true o false). Las personas que posean tu mismo nombre tienen ingreso libre así como también los que posean un pase vip, mostrar un mensaje de bienvenida. Si posee entrada preguntar si desea utilizarla, en caso afirmativo mostrar mismo mensaje de bienvenida. Y por ultimo de no tener el mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso afirmativo solicitar dinero disponible, si posee $1000 o mas, mostrar mensaje de venta de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en caso contrario a no querer comprar, mostrar mensaje de despedida.
-let invitado = {  //aca defino el objeto invitado e inicializo las variables vacias.
-        nombre: null,
-        pase: null,
-        entrada: null
-    };
-    console.table(invitado)
-let nombreInvitado = prompt('ingresa tu nombre').toUpperCase();
-console.log(nombreInvitado);
-let tienePase = prompt('¿que pase tenés? VIP o normal');
-console.log(tienePase);
+        // let invitado = {  //aca defino el objeto invitado e inicializo las variables vacias.
+        //         nombre: null,
+        //         pase: null,
+        //         entrada: null
+        //     };
+        //     console.table(invitado)
+        // let nombreInvitado = prompt('ingresa tu nombre').toUpperCase();
+        // console.log(nombreInvitado);
+        // let tienePase = prompt('¿que pase tenés? VIP o normal');
+        // console.log(tienePase);
 
 
-invitado.nombre = nombreInvitado;
-invitado.pase = tienePase;
+        // invitado.nombre = nombreInvitado;
+        // invitado.pase = tienePase;
 
 
-if ( invitado.nombre === 'GIMENA' || invitado.pase =='VIP'){
-    alert(`Bienvenid@ ${invitado.nombre}`)
-} else {
-        let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');
-        if (compra == true){
-                let dinero = prompt('¿cuanto dinero tenés?');
-                if (dinero >= 1000){
-                        alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
-                }else{
-                        alert(`Compra rechazada`)
-                }
-        } else {
-                alert('Que lastima, adios!')
-        }
-};
-let tieneEntrada = confirm('¿Tenes entrada? pone OK, sino CANCEL');
-console.log(tieneEntrada);
-invitado.entrada = tieneEntrada;
-console.table(invitado)
+        // if ( invitado.nombre === 'GIMENA' || invitado.pase =='VIP'){
+        //     alert(`Bienvenid@ ${invitado.nombre}`)
+        // } else {
+        //         let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');
+        //         if (compra == true){
+        //                 let dinero = prompt('¿cuanto dinero tenés?');
+        //                 if (dinero >= 1000){
+        //                         alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
+        //                 }else{
+        //                         alert(`Compra rechazada`)
+        //                 }
+        //         } else {
+        //                 alert('Que lastima, adios!')
+        //         }
+        // };
+        // let tieneEntrada = confirm('¿Tenes entrada? pone OK, sino CANCEL');
+        // console.log(tieneEntrada);
+        // invitado.entrada = tieneEntrada;
+        // console.table(invitado)
 
-if (invitado.entrada == true){
-        let usar = confirm('¿Queres usarla? OK si es si, CANCEL si es NO');
-        if (usar == true){
-                alert(`Mas que Bienvenid@ ${invitado.nombre}`)
-        }else{
-                alert('Un gusto, nos vemos!')
-        }
-} else{
-    let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');    
-        if (compra == true){
-                let dinero = prompt('¿cuanto dinero tenés?');
-                if (dinero >= 1000){
-                        alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
-                }else{
-                        alert(`Compra rechazada`)
-                }
-        } else {
-                alert('Que lastima, adios!')
-}
-}
+        // if (invitado.entrada == true){
+        //         let usar = confirm('¿Queres usarla? OK si es si, CANCEL si es NO');
+        //         if (usar == true){
+        //                 alert(`Mas que Bienvenid@ ${invitado.nombre}`)
+        //         }else{
+        //                 alert('Un gusto, nos vemos!')
+        //         }
+        // } else{
+        //     let compra = confirm('¿Queres comprar? OK si es si, CANCEL si es NO');    
+        //         if (compra == true){
+        //                 let dinero = prompt('¿cuanto dinero tenés?');
+        //                 if (dinero >= 1000){
+        //                         alert(`Compra realizada. Bienvenid@ ${invitado.nombre}`)
+        //                 }else{
+        //                         alert(`Compra rechazada`)
+        //                 }
+        //         } else {
+        //                 alert('Que lastima, adios!')
+        // }
+        // }
 // 8.	Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable llamada numeroIncognita y que permita en 3 intentos adivinar el numero. El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos el cual se deberá guardar en una variable llamada numeroIngresado, y en cada intento deberás mostrarle un mensaje al usuario diciendo: “el numero ingresado es mayor, vuelve a intentarlo” o “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, un mensaje que diga: “Ganaste, haz adivinado el numero.” No te preocupes si usas mucho código repetido, mas adelante veraz como realizar este juego de manera mas eficiente.
 
+        // let numeroIncognita = 9; //establezco el numero para adivinar
+        // console.log(numeroIncognita);
+
+        // let numeroIngresado= [null, null, null] //creo un array donde iran todas las opciones
+        // console.table(numeroIngresado)
+
+        //        //creo las acciones para interactuar
+        // let intento1 = prompt('Intento 1: ingresá un número entre 1 y 10');
+        // console.log(intento1);
+        // //condiciones del juego
+        // if(intento1 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento1 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
+
+        // let intento2 = prompt('Intento 2 ingresá un número entre 1 y 10');
+        // console.log(intento2);
+        // if(intento2 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento2 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
+        // let intento3 = prompt('Intento 3: ingresá un número entre 1 y 10');
+        // console.log(intento3);
+        // if(intento3 < 9){
+        //         alert('el numero ingresado es menor, vuelve a intentarlo');
+        // } else if (intento3 > 9){
+        //     alert('el numero ingresado es mayor, vuelve a intentarlo');
+        // }else{
+        //         alert(`Ganaste, haz adivinado el numero. Era ${numeroIncognita}`)
+        // }
+        //  //asigno los valores ingresados al array
+        // numeroIngresado[0] = intento1;
+        // numeroIngresado[1] = intento2;
+        // numeroIngresado[2] = intento3;
+        // console.table(numeroIngresado)
+
 // 9.	Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.
-
+        // let tuEdad = prompt('¿Cual es tu edad?');
+        // if( tuEdad <= 12){
+        //         console.log(`Sos un infante, porque tenés ${tuEdad}`);
+        // }else if(tuEdad >= 13 && tuEdad <= 18){
+        //         console.log(`Sos un adolescente, porque tenés ${tuEdad}`);
+        // }else if(tuEdad >= 19 && tuEdad <= 45){
+        //         console.log(`Sos un mayor joven, porque tenés ${tuEdad}`);
+        // }else if(tuEdad > 45 && tuEdad <= 100){
+        //         console.log(`Sos un anciano, porque tenés ${tuEdad}`);
+        // }else{
+        //         let seguro = confirm(`¿Realmente tenés ${tuEdad}?`)
+        //         if(seguro ==true){
+        //                 console.log(`Sos un Super anciano, porque tenés ${tuEdad}`);
+        //         }else{
+        //                 console.log('Decime tu verdadera edad')
+        //                 let tuEdad2 = prompt('¿Cual es tu verdadera edad?');
+        //                 if( tuEdad2 <= 12){
+        //                         console.log(`Sos un infante, porque tenés ${tuEdad2}`);
+        //                 }else if(tuEdad2 >= 13 && tuEdad2 <= 18){
+        //                         console.log(`Sos un adolescente, porque tenés ${tuEdad2}`);
+        //                 }else if(tuEdad2 >= 19 && tuEdad2 <= 45){
+        //                         console.log(`Sos un mayor joven, porque tenés ${tuEdad2}`);
+        //                 }else{
+        //                         console.log(`Sos un anciano, porque tenés ${tuEdad2}`);
+        //                 }
+        //         }
+        // }
 // 10.	Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
+        // const opciones = ['piedra', 'papel', 'tijeras'];
+        // console.log(opciones)
+        // let jugador1 = [];
+        // let ingresoJugador1 = prompt('Jugador 1: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        // jugador1.push(ingresoJugador1);
+        // console.log(jugador1[0])
+        // let jugador2 = [];
+        // let ingresoJugador2 = prompt('Jugador 2: ingrese PIEDRA O PAPEL O TIJERAS').toLowerCase();
+        // jugador2.push(ingresoJugador2);
+        // console.log(jugador2[0])
+        // let partida = [
+        //         {
+        //                 nombre: 'Participante 1',
+        //                 jugo: jugador1[0]
+        //         },
+        //         {
+        //                 nombre: 'Participante 2',
+        //                 jugo: jugador2[0]
+        //         },
+        // ]
+        // console.table(partida)
 
+        // if(partida[0].jugo == partida[1].jugo){
+        //         console.log(`Empataron porque ambos eligieron ${partida[0].jugo}`)
+                
+        // } else if(partida[0].jugo == opciones[0] && partida[1].jugo == opciones[2]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[1] && partida[1].jugo == opciones[0]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[2] && partida[1].jugo == opciones[1]){
+        //         console.log(`Gano el ${partida[0].nombre} porque eligió ${partida[0].jugo} y  el ${partida[1].nombre} eligió ${partida[1].jugo}`)
+        // } else if(partida[0].jugo == opciones[1] && partida[1].jugo == opciones[2]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // } else if(partida[0].jugo == opciones[0] && partida[1].jugo == opciones[1]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // } else if(partida[0].jugo == opciones[2] && partida[1].jugo == opciones[0]){
+        //         console.log(`Gano el ${partida[1].nombre} porque eligió ${partida[1].jugo} y  el ${partida[0].nombre} eligió ${partida[0].jugo}`)
+        // }else{
+        //         console.log( `Algun jugador ingresó hizo trampa`)
+        // };
 // 11.	Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
-let ingreseColor = prompt('ingrese un color').toLocaleLowerCase();
-console.log(ingreseColor)
-switch (ingreseColor) {
-  case 'blanco':
-    console.log('Falta color')
-    break;
-  case 'negro':
-    console.log('Falta color')
-    break;
-  case 'verde':
-    console.log('Color de la naturaleza')
-    break;
-  case 'azul':
-    console.log('Color del agua')
-    break;
-  case 'amarillo':
-    console.log('Color del sol')
-    break;
-  case 'rojo':
-    console.log('color del fuego')
-    break;
-  case 'marron':
-    console.log('Color de la tierra')
-    break;
-  default:
-    console.log('Excelnte eleccion, no lo teniamos pensado')
-   break;
-}
+        // let ingreseColor = prompt('ingrese un color').toLocaleLowerCase();
+        // console.log(ingreseColor)
+        // switch (ingreseColor) {
+        // case 'blanco':
+        // console.log('Falta color')
+        // break;
+        // case 'negro':
+        // console.log('Falta color')
+        // break;
+        // case 'verde':
+        // console.log('Color de la naturaleza')
+        // break;
+        // case 'azul':
+        // console.log('Color del agua')
+        // break;
+        // case 'amarillo':
+        // console.log('Color del sol')
+        // break;
+        // case 'rojo':
+        // console.log('color del fuego')
+        // break;
+        // case 'marron':
+        // console.log('Color de la tierra')
+        // break;
+        // default:
+        // console.log('Excelnte eleccion, no lo teniamos pensado')
+        // break;
+        // }
 // 12.	Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
+//        let num1 = Number(prompt('Ingrese un numero')); 
+//        let num2 = Number(prompt('Ingrese otro numero')); 
+//        let operacion = prompt('Ingrese que operación quiere realizar (suma,resta, multiplicacion, division').toLowerCase(); 
+//        console.log( `Al ${num1} y al ${num2} quiero hacer la operación de ${operacion}`);
+//        switch (operacion) {
+//         case 'suma':
+//                 console.log(num1 + num2);
+//                 break;
+//         case 'resta':
+//                 console.log(num1 - num2);
+//                 break;
+//         case 'multiplicacion':
+//                 console.log(num1 * num2);
+//                 break;
+//         case 'division':
+//                 if(num2 === 0){
+//                         console.log('no se puede dividir por 0')
+//                 } else{
+//                         console.log(num1 / num2);
+//                 }
+//                 break;
+//         default:{
+//                 console.log('Algo raro pasó, verifica los datos ingresados');
+//         }
+//                 break;
+//        }
+//  console.warn('fin')
+
 
 // 13.	Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
 
-let CIUDADANO=[{
-  nombre: null,
-  apellido: null,
-  nacimiento: null,
-  ciudad: null,
-  provincia: null
-}];
-
-let ingreseNombre = prompt('ingresa tu nombre').toLocaleUpperCase();
-let ingreseApellido = prompt('ingresa tu apellido').toLocaleUpperCase();
-let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento').toLocaleUpperCase();
-let ingreseCiudad = prompt('ingresa tu ciudad').toLocaleUpperCase();
-let ingreseProvincia = prompt('ingresa tu provincia').toLocaleUpperCase();
-
-CIUDADANO.nombre.push(ingreseNombre);
-console.log(CIUDADANO.nombre)
-CIUDADANO.apellido.push(ingreseApellido);
-CIUDADANO.nacimiento.push(ingreseNacimiento);
-CIUDADANO.ciudad.push(ingreseCiudad);
-CIUDADANO.provincia.push(ingreseProvincia);
-
-console.table(CIUDADANO)
+        // let ingreseNombre = prompt('ingresa tu nombre');
+        // let ingreseApellido = prompt('ingresa tu apellido');
+        // let ingreseNacimiento = prompt('ingresa tu fecha de nacimiento');
+        // let ingreseCiudad = prompt('ingresa tu ciudad');
+        // let ingreseProvincia = prompt('ingresa tu provincia');
+        // alert(`Los datos ingresados fueron ${ingreseNombre}, ${ingreseApellido}, ${ingreseNacimiento}, ${ingreseCiudad}, ${ingreseProvincia}`)
+        // let correct = confirm('¿Estan correctos?')
+        // if(correct == true){
+        //         var DNI= [];
+        //         DNI.push({
+        //                 nombre: ingreseNombre,
+        //                 apellido: ingreseApellido,
+        //                 nacimiento: ingreseNacimiento,
+        //                 ciudad: ingreseCiudad,
+        //                 provincia: ingreseProvincia
+        //         })
+        //         console.table(DNI)
+        //         console.log('Registro Exitoso')
+        // }else{
+        //         console.log('Datos erroneos, intentelo de nuevo en 1 mes')
+        // };

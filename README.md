@@ -6,6 +6,6 @@
 
 Ejercicios de práctica sobre Javascript correspondientes al modulo 2 del bootcamp de Front End de Mindhub
 
-
-
-![ejerc_JS_preview](./img.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/97200944/222796395-48f98e8c-ee84-43a0-b3bd-23b886d209e2.png" />
+</p>
